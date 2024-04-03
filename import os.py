@@ -1,10 +1,10 @@
 import os 
 from random import randint
 
-for i in range(1, 120):
+for i in range(1, 100):
     d = str(i) + ' days ago'
 
-    for j in range(0,randint(1,3)):
+    for j in range(0,randint(1,2)):
         with open('file.txt','a') as file: 
             file.write(d + '\n')
         os.system('git add .')
